@@ -1,0 +1,25 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = Convert.ToInt32(Console.ReadLine());
+            if (a > 500 && a <= 1000)
+            {
+                Console.WriteLine(0.97 * a);
+            }
+            else if (a > 1000)
+            {
+                Console.WriteLine(0.95 * a);
+            }
+            else
+            {
+                Console.WriteLine(a);
+            }
+            Console.ReadLine();
+        }
+    }
+}
