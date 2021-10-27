@@ -1,0 +1,40 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Введите номер: ");
+        int dayNum = Convert.ToInt32(Console.ReadLine());
+
+        string dayName;
+        switch (dayNum)
+        {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+                dayName = "начальная школа";
+                break;
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+                dayName = "средняя школа";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                dayName = "старшая школа";
+                break;
+                
+            default:
+                dayName = "Ошибка: Дня с номером " + dayNum + " не существует";
+                break;
+        }
+
+        Console.WriteLine(dayName);
+         
+        Console.ReadLine();
+    }
+}
