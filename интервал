@@ -1,0 +1,39 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            int c = Convert.ToInt32(Console.ReadLine());
+            if (a <= 3 && a >= 1)
+            {
+                Console.WriteLine("a принадлежит");
+            }
+            else
+            {
+                Console.WriteLine("a не принадлежит");
+            }
+            if (b <= 3 && b >= 1)
+            {
+                Console.WriteLine("b принадлежит");
+            }
+            else
+            {
+                Console.WriteLine("b не принадлежит");
+            }
+            if (c <= 3 && c >= 1)
+            {
+                Console.WriteLine("c принадлежит");
+            }
+            else
+            {
+                Console.WriteLine("c не принадлежит");
+            }
+            Console.ReadLine();
+        }
+    }
+}
