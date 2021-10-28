@@ -1,0 +1,32 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("n = ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int number = 0;
+            int i = 1;
+            while (i <= n)
+            {
+                if (i % 2 == 0)
+                {
+                    number++;
+                }
+                i++;
+            }
+            int sum = 0;
+            for (int j = 1 ; j <= n; j++)
+            {
+                if (j % 2 == 0)
+                sum += j;
+            }
+            Console.WriteLine("Сумма {0} парных чисел равна {1}", n, sum);
+            Console.WriteLine("Количество парных чисел равно " + number);
+            Console.ReadLine();
+        }
+    }
+}
