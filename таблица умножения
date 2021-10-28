@@ -1,0 +1,18 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        for (int i = 2; i <= 6; i++)
+        {
+            Console.WriteLine($"Таблица умножения на {i}");
+            for (int j = 2; j <= 9; j++)
+            {
+                Console.WriteLine($"{i} * {j} = {i * j}");
+            }
+            Console.WriteLine();
+        }
+        Console.ReadLine();
+    }
+}
