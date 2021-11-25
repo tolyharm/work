@@ -1,0 +1,22 @@
+using System;
+
+namespace ConsoleApp
+{
+    class Program
+    {
+        static void Main()
+        {
+            string text = "Один оба три";
+            int counter = 0;
+
+            foreach (string word in text.ToLower().Split(" "))
+            {
+                if (word.StartsWith("о"))
+                {
+                    counter++;
+                }
+            }
+            Console.WriteLine($"Количество слов, которые пишутся с \"о\": {counter}");
+        }
+    }
+}
