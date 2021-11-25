@@ -1,0 +1,23 @@
+using System;
+
+namespace ConsoleApp
+{
+    class Program
+    {
+        static void Main()
+        {
+            string a = Convert.ToString(Console.ReadLine());
+            int counter = 0;
+
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] == ':')
+                {
+                    counter++;
+                }
+            }
+            Console.WriteLine(a.Replace(':', '%'));
+            Console.WriteLine(counter);
+        }
+    }
+}
