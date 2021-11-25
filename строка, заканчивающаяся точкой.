@@ -1,0 +1,20 @@
+using System;
+
+namespace ConsoleApp
+{
+    class Program
+    {
+        static void Main()
+        {
+            string text = Convert.ToString(Console.ReadLine());
+            int counter = 0;
+            foreach (string word in text.ToLower().Split(" "))
+            {
+                {
+                    counter++;
+                }
+            }
+            Console.WriteLine(counter);
+        }
+    }
+}
