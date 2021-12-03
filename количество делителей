@@ -11,6 +11,7 @@ namespace ConsoleApp5
                 int delitel = 0;
                 for (int j = 1; j <= i; j++)
                 {
+                    if (i % j == 0)
                     {
                         delitel += 1;
                     }
