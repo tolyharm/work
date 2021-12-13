@@ -1,0 +1,25 @@
+using System;
+
+namespace ConsoleApp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string text = "data abobagae topwsg sgjndjgh d";
+
+            string answer = "";
+
+            foreach (string word in text.Split(' '))
+            {
+                char[] arr = word.ToCharArray();
+
+                Array.Sort(arr);
+
+                answer += new string(arr) + " ";
+            }
+
+            Console.WriteLine(answer);
+        }
+    }
+}
